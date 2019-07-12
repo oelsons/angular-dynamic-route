@@ -4,4 +4,6 @@
 </div>
 <ng-template #not_found>
   <p>Bot not found!</p>
+  <p>Bots available:</p>
+  <li *ngFor="let bot of botsInBackEnd">{{bot}}</li>
 </ng-template>

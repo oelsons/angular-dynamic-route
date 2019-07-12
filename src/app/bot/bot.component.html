@@ -1,0 +1,7 @@
+<h1>Welcome to Bot Page!</h1>
+<div *ngIf="validBot;else not_found">
+  <h2>This is bot: {{botName}}</h2>
+</div>
+<ng-template #not_found>
+  <p>Bot not found!</p>
+</ng-template>
